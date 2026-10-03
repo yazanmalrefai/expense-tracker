@@ -42,9 +42,9 @@ based on Example.env
 <img src="screenshots/desktop2.png" alt="Expense Tracker Dashboard" width="800">
 
   Mobile :
-<img src="screenshots/mobie1.png" alt="Expense Tracker Dashboard" width="800">
-<img src="screenshots/mobie2.png" alt="Expense Tracker Dashboard" width="800">
-<img src="screenshots/mobie3.png" alt="Expense Tracker Dashboard" width="800">  
+<img src="screenshots/mobile1.png" alt="Expense Tracker Dashboard" width="800">
+<img src="screenshots/mobile2.png" alt="Expense Tracker Dashboard" width="800">
+<img src="screenshots/mobile3.png" alt="Expense Tracker Dashboard" width="800">  
 
 
 
