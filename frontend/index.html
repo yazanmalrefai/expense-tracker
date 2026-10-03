@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Expense Tracker</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  
+  <header>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">
+          Expense Tracker
+        </span>
+        
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+  <div id="loadingSpinner" class="text-center my-3 d-none">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  
+  <section class="container my-4 rounded">
+    <div class="SummaryCards ">
+  
+      <div class="card fs-4 fw-bold">
+        <p class="mb-2">Total Amount</p>
+        <p id="totalAmount" class="mb-0">0</p>
+      </div>
+  
+      <div class="card fs-4 fw-bold">
+        <p class="mb-2">Number of Expenses</p>
+        <p id="numberOfExpenses" class="mb-0" id="numOfexpenses">0</p>
+      </div>
+  
+      <div class="card fs-4 fw-bold">
+        <p class="mb-2">Highest Expense</p>
+        <p id="highestExpense" class="mb-0">0</p>
+        <p class="fw-lighter" id="highestExpenseTitle"></p>
+      </div>
+  
+    </div>
+
+
+  
+
+
+  </section>
+
+
+  <section >
+    <div class="container chart-container rounded">
+      <canvas id="myChart"></canvas>
+    </div>
+
+
+  </section>
+
+
+
+    
+    <div class="container my-5 rounded">
+
+      <form id="expenseForm" class="row g-3 rounded pb-3">
+
+        
+        <div class="col-md-3">
+          <label for="idTitle" class="form-label fw-bold"> Title</label>
+          <input  type="text"  class="form-control" id="idTitle"required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="inputAmount" class="form-label fw-bold">Amount</label>
+          <input type="number" class="form-control" id="inputAmount" placeholder="10.00" step="0.01" required>
+        </div>
+
+
+        
+        <div class="col-md-2">
+          <label for="inputCategory" class="form-label fw-bold">Category</label>
+          <select class="form-select" id="inputCategory" required>
+            <option value="">Choose...</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Bills">Bills</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Other">Other</option>
+            
+          </select>
+        </div>
+
+
+        
+        <div class="col-md-2">
+          <label for="inputDate" class="form-label fw-bold">Date</label>
+          <input type="date" class="form-control" id="inputDate" required>
+        </div>
+
+
+       
+        <div class="col-md-3 d-flex flex-column justify-content-end">
+          <button type="submit" class="btn btn-primary" id="btnAddSave">
+            Add Expense
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+
+
+    
+
+
+  <section class="mb-5">
+    <div class="container bg-expenese rounded">
+      
+      <div class="table-responsive rounded pt-4">
+
+        <table class="table  table-dark table-hover" id="idExpenses">
+
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Amount</th>
+              <th>Category</th>
+              <th>Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+         
+          <tbody id="tbExpenses">
+          </tbody>
+
+        </table>
+
+      </div>
+      
+      <div>
+        <button class="bg-primary fw-bold p-2 mb-2  rounded" id="btnDownload">Download csv</button>
+      </div>
+
+    </div>
+
+    
+    </div>
+  </section>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
+

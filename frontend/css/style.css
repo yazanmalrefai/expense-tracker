@@ -1,0 +1,47 @@
+.navbar {
+    background-color: rgb(245, 245, 233);
+}
+
+
+.SummaryCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+    
+    
+}
+
+.SummaryCards p
+{
+    color: white;
+}
+
+.SummaryCards div
+{
+    background-color: rgb(38, 38, 29);
+}
+
+
+.card {
+    border: none;
+    text-align: center;
+    background-color: rgb(234, 234, 208);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+@media (max-width: 760px) {
+    .SummaryCards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.bg-expenese {
+    background-color: rgb(245, 245, 233);
+}
+
+.container {
+    background-color: rgb(245, 245, 233);
+}
